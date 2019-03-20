@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css?family=Cuprum');
+
+body{
+  background-color: #DCDDE1;
+  font-family: 'Cuprum', sans-serif;
+}
+.menu #logo{
+  position: absolute;
+  top:20px;
+  left: 5%;
+  font-size: 22px;
+}
+nav{
+  margin-top: 0px;
+  padding-bottom: 3px;
+}
+
+/*page content*/
+#wrapper{
+  position: relative;
+  width:100%;
+  min-height:55vw;
+  overflow: hidden;
+}
+.layer{
+  position: absolute;
+  width:100vw;
+  min-height: 55vw;
+  overflow: hidden;
+}
+.layer .content-wrap{
+  position: absolute;
+  width:100vw;
+  min-height: 55vw;
+}
+.layer .content-body{
+  width:25%;
+  position:absolute;
+  top:50%;
+  text-align: center;
+  transform: translateY(-50%);
+  color: #fff;
+}
+.layer h1{
+  font-size:30px;
+}
+.bottom{
+  background:#222;
+}
+.bottom .content-body{
+  right:5%;
+}
+.bottom h1{
+  color:#FDAB00;
+}
+.top{
+  background:#EEE;
+  color:#222;
+  width:50vw;
+}
+.top .content-body{
+  left: 5%;
+  color:#222;
+}
+
+/*TOP MENU*/
+.menu *{
+  margin: 0;
+  padding: 0;
+  z-index: 10;
+}
+.menu ul,
+.menu ol{
+ list-style: none;
+}
+.menu > ul{
+ display: flex;
+ justify-content: center;
+}
+.menu > ul li{
+ position: relative;
+ border-right: 1px solid #C7C8CA;
+}
+.menu > ul li:first-child{
+ border-left: 1px solid #C7C8CA;
+}
+.menu > ul li:last-child{
+ border-right: 1px solid #C7C8CA;
+}
+.menu > ul li > a #link{
+ position: absolute;
+ top: 15px;
+ left: 12px;
+ font-size: 18px;
+}
+.menu > ul li a{
+ display: block;
+ /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#c9c9c9+0,f6f6f6+2,c4c5c7+98,757577+100;Custom+3 */
+ background: rgb(201,201,201); /* Old browsers */
+ background: -moz-linear-gradient(top,  rgba(201,201,201,1) 0%, rgba(246,246,246,1) 2%, rgba(196,197,199,1) 98%, rgba(117,117,119,1) 100%); /* FF3.6-15 */
+ background: -webkit-linear-gradient(top,  rgba(201,201,201,1) 0%,rgba(246,246,246,1) 2%,rgba(196,197,199,1) 98%,rgba(117,117,119,1) 100%); /* Chrome10-25,Safari5.1-6 */
+ background: linear-gradient(to bottom,  rgba(201,201,201,1) 0%,rgba(246,246,246,1) 2%,rgba(196,197,199,1) 98%,rgba(117,117,119,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c9c9c9', endColorstr='#757577',GradientType=0 ); /* IE6-9 */
+
+ padding: 15px 30px 15px 40px;
+ font-size: 14px;
+ color: #454547;
+ text-decoration: none;
+ text-transform:uppercase;
+ transition: all 0.3s ease;
+}
+.menu li a:hover{
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#4c4c4c+0,595959+12,666666+25,474747+39,2c2c2c+98,1c1c1c+100,111111+100,2b2b2b+100,131313+100 */
+background: rgb(76,76,76); /* Old browsers */
+background: -moz-linear-gradient(top, rgba(76,76,76,1) 0%, rgba(89,89,89,1) 12%, rgba(102,102,102,1) 25%, rgba(71,71,71,1) 39%, rgba(44,44,44,1) 98%, rgba(28,28,28,1) 100%, rgba(17,17,17,1) 100%, rgba(43,43,43,1) 100%, rgba(19,19,19,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, rgba(76,76,76,1) 0%,rgba(89,89,89,1) 12%,rgba(102,102,102,1) 25%,rgba(71,71,71,1) 39%,rgba(44,44,44,1) 98%,rgba(28,28,28,1) 100%,rgba(17,17,17,1) 100%,rgba(43,43,43,1) 100%,rgba(19,19,19,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, rgba(76,76,76,1) 0%,rgba(89,89,89,1) 12%,rgba(102,102,102,1) 25%,rgba(71,71,71,1) 39%,rgba(44,44,44,1) 98%,rgba(28,28,28,1) 100%,rgba(17,17,17,1) 100%,rgba(43,43,43,1) 100%,rgba(19,19,19,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4c4c4c', endColorstr='#131313',GradientType=0 ); /* IE6-9 */
+
+ color: #ffffff;
+ box-shadow: 1px 5px 10px -5px black;
+ transition: all 0.3s ease;
+}
+
+/*sub menu*/
+.menu li ul{
+ position: absolute;
+ min-width: 150px;
+ display: none;
+}
+.menu li > ul li{
+ border: 1px solid #c7c8ca;
+}
+.menu li > ul li a{
+ padding: 10px;
+ text-transform: none;
+ background: #e4e4e5;
+}
+.menu li > ul li ul{
+ position: absolute;
+ right: -150px;
+ top: 0;
+}
+.menu li:hover > ul{
+ display: block;
+}
